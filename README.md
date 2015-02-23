@@ -21,6 +21,7 @@ fields:
 ### v1.1
 Default hex colors can now be specified in the blueprint and should be written without the `#`.
 
+---
 
 #### Credits
 Thanks to [@claviska](https://github.com/claviska) for his great MiniColors plugin.
