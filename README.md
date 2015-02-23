@@ -17,9 +17,8 @@ fields:
     default: 095af0
 ```
 
-
-### v1.1
-Default hex colors can now be specified in the blueprint and should be written without the `#`.
+## Updates
+**v1.1** Default hex colors can now be specified in the blueprint and should be written without the `#`.
 
 ---
 
