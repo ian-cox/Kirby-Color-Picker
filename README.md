@@ -18,11 +18,11 @@ fields:
 ```
 
 
-### Update: v1.1
+### v1.1
 Default hex colors can now be specified in the blueprint and should be written without the `#`.
 
 
-## Credits
+#### Credits
 Thanks to [@claviska](https://github.com/claviska) for his great MiniColors plugin.
 
 Also thanks to [@ptouch718](https://github.com/ptouch718) for his masterful JS debugging.
