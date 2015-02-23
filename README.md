@@ -1,4 +1,4 @@
-# Color Picker Field for Kirby CMS
+# Color Picker Field for Kirby CMS v1.1
 
 A simple color picker field for [Kirby CMS](http://getkirby.com/) which makes use of the [jQuery MiniColors](https://github.com/claviska/jquery-miniColors/) plugin.
 
@@ -14,8 +14,12 @@ fields:
   bgcolor:
     label: Background Color
     type:  color
+    default: 095af0
 ```
-
+---
+Update: v1.1
+Default hex colors can now be specified in the blueprint and should be written without the `#`.
+---
 ## Credits
 Thanks to [@claviska](https://github.com/claviska) for his great MiniColors plugin.
 
