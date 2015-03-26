@@ -14,15 +14,14 @@ jQuery&&function($){function i(i,t){var o=$('<div class="minicolors" />'),n=$.mi
 	$(document).ready(function() {
 
 		if (app && typeof app == 'object') {
-			$(app.main).on('view:load', function () {
+			$(app.modal).on('view:load', addColorpicker);
+			$(app.main).on('view:load', addColorpicker);
+		}
 
-				var $colorpicker = $('.colorpicker');
-
-				if ($colorpicker.length) {
-					$colorpicker.minicolors();
-				}
-			
-			});
+		function addColorpicker() {
+			var $colorpicker = $('.colorpicker');
+			if ($colorpicker.length) 
+				$colorpicker.minicolors();
 		}
 	
 	});
