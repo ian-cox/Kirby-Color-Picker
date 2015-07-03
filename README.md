@@ -5,7 +5,8 @@ A simple color picker field for [Kirby CMS](http://getkirby.com/) which makes us
 
 ![color-picker](https://cloud.githubusercontent.com/assets/4325127/6277766/9867c910-b85f-11e4-885c-b67b387552cb.gif)
 
-From the root of your kirby install, cd into `site/fields/` and run `git clone git@github.com:ian-cox/Kirby-Color-Picker.git color` to add these files into a new color field folder.
+From the root of your kirby install, cd into `site/fields/` and run: 
+`git clone git@github.com:ian-cox/Kirby-Color-Picker.git color` to add these files into a new color field folder.
 
 Alternatively you can download the zip file, unzip it's contents into `site/fields/color`.
 
