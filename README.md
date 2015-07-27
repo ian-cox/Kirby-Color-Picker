@@ -1,4 +1,5 @@
 # Color Picker Field for Kirby CMS v1.1
+[![License](https://poser.pugx.org/laravel/framework/license.svg)](http://opensource.org/licenses/MIT)
 
 A simple color picker field for [Kirby CMS](http://getkirby.com/) which makes use of the [jQuery MiniColors](https://github.com/claviska/jquery-miniColors/) plugin.
 
