@@ -1,4 +1,12 @@
 <?php
+/*
+ * Color Picker Field for Kirby CMS
+ *
+ * Copyright: Ian Cox
+ *
+ * @license: http://opensource.org/licenses/MIT
+ *
+ */
 
 class ColorField extends InputField{
 
