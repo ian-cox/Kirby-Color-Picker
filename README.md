@@ -2,6 +2,7 @@
 [![License](https://poser.pugx.org/laravel/framework/license.svg)](http://opensource.org/licenses/MIT)
 
 **(Not yet updated for Kirby 2.2 Beta)**
+The ```develop branch`` has is a partial fix for kirby v2.2
 
 A simple color picker field for [Kirby CMS](http://getkirby.com/) which makes use of the [jQuery MiniColors](https://github.com/claviska/jquery-miniColors/) plugin.
 
