@@ -12,17 +12,20 @@ jQuery&&function($){function i(i,t){var o=$('<div class="minicolors" />'),n=$.mi
 
 (function ($) {
 	$(document).ready(function() {
+		
+		$('.colorpicker').minicolors();
 
-		if (app && typeof app == 'object') {
-			$(app.modal).on('view:load', addColorpicker);
-			$(app.main).on('view:load', addColorpicker);
-		}
+		// OLD CODE TO SUPPORT KIRBY V2.1 
+		// if (app && typeof app == 'object') {
+		// 	$(app.modal).on('view:load', addColorpicker);
+		// 	$(app.main).on('view:load', addColorpicker);
+		// }
 
-		function addColorpicker() {
-			var $colorpicker = $('.colorpicker');
-			if ($colorpicker.length) 
-				$colorpicker.minicolors();
-		}
+		// function addColorpicker() {
+		// 	var $colorpicker = $('.colorpicker');
+		// 	if ($colorpicker.length) 
+		// 		$colorpicker.minicolors();
+		// }
 	
 	});
 } (jQuery));
