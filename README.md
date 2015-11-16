@@ -27,9 +27,11 @@ fields:
 ```
 
 ## Updates
+**v1.2** Now working in both Kirby 2 and 2.2
+
 **v1.1** Default hex colors can now be specified in the blueprint and should be written without the `#`.
 
-**v1.2** Now working in both Kirby 2 and 2.2
+
 
 ---
 
