@@ -1,7 +1,7 @@
 # Color Picker Field for Kirby CMS
 [![License](https://poser.pugx.org/laravel/framework/license.svg)](http://opensource.org/licenses/MIT)
 
-**The develop branch now supports Kirby 2.2 Beta** (Thanks @dionysiusmarquis)
+The master branch now supports both Kirby 2 and 2.2 (Thanks to @bastianallgeier)
 
 A simple color picker field for [Kirby CMS](http://getkirby.com/) which makes use of the [jQuery MiniColors](https://github.com/claviska/jquery-miniColors/) plugin.
 
@@ -29,9 +29,12 @@ fields:
 ## Updates
 **v1.1** Default hex colors can now be specified in the blueprint and should be written without the `#`.
 
+**v1.2** Now working in both Kirby 2 and 2.2
+
 ---
 
 #### Credits
 Thanks to [@claviska](https://github.com/claviska) for his great MiniColors plugin.
+[@ptouch718](https://github.com/ptouch718) for his masterful JS debugging.
+@dionysiusmarquis and @bastianallgeier for helping port it to kirby 2.2
 
-Also thanks to [@ptouch718](https://github.com/ptouch718) for his masterful JS debugging.
