@@ -40,6 +40,7 @@ class ColorField extends InputField{
     $color->attr(array(
       'name'         => $this->name(),
       'id'           => $this->id(),
+      'disabled'     => $this->disabled(),
       'type'           =>"text",
       'data-defaultvalue' => $value,
       'value'    => $value
