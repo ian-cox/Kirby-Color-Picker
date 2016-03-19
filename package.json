@@ -1,0 +1,8 @@
+{
+  "name": "colorpicker",
+  "description": "Kirby Color Picker Field",
+  "author": "Ian Cox",
+  "license": "MIT",
+  "version": "1.2.1",
+  "type": "kirby-field"
+}
