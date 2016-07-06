@@ -16,6 +16,7 @@ class ColorField extends InputField{
     ),
     'css' => array(
       'minicolors.css',
+      'color.css',
     )
   );
 
@@ -24,7 +25,7 @@ class ColorField extends InputField{
     $this->icon        = 'paint-brush';
   }
 
-  public function input() {    
+  public function input() {
     $color = new Brick('input');
     $color->addClass('colorpicker');
     $color->data('field', 'minicolors');
@@ -41,12 +42,13 @@ class ColorField extends InputField{
       'name'         => $this->name(),
       'id'           => $this->id(),
       'disabled'     => $this->disabled(),
-      'type'           =>"text",
+      'readonly'     => $this->readonly(),
+      'type'         => "text",
       'data-defaultvalue' => $value,
       'value'    => $value
     ));
 
-    $color->append($this->option('', '', $this->value() == ''));   
+    $color->append($this->option('', '', $this->value() == ''));
 
     $wrapper = new Brick('div');
     $wrapper->addClass('input color-wrapper');
@@ -54,5 +56,5 @@ class ColorField extends InputField{
 
     return $color;
   }
-  
+
 }
