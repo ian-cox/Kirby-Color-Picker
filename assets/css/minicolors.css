@@ -239,8 +239,8 @@
 .minicolors-theme-default .minicolors-swatch {
     top: 5px;
     left: 5px;
+    bottom: 5px;
     width: 18px;
-    height: 18px;
 }
 .minicolors-theme-default .minicolors-swatches .minicolors-swatch {
     top: 0;
@@ -255,14 +255,8 @@
     left: auto;
     right: 5px;
 }
-.minicolors-theme-default.minicolors {
-    width: auto;
-    display: inline-block;
-}
 .minicolors-theme-default .minicolors-input {
     height: 20px;
-    width: auto;
-    display: inline-block;
     padding-left: 26px;
 }
 .minicolors-theme-default.minicolors-position-right .minicolors-input {
