@@ -27,7 +27,7 @@ class ColorField extends InputField{
 
   public function input() {
     $color = new Brick('input');
-    $color->addClass('colorpicker');
+    $color->addClass('input colorpicker');
     $color->data('field', 'minicolors');
 
     if($this->value() == "" && $this->default() !== ""):
