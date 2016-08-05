@@ -192,6 +192,8 @@
     border: solid 1px black;
     margin-top: -2px;
     box-sizing: content-box;
+    width: 18px;
+    height: 1px;
 }
 
 /* Swatches */
