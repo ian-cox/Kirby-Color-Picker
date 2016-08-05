@@ -29,6 +29,11 @@
     bottom: 0;
 }
 
+.minicolors-swatch{
+  border-radius: 3px;
+  overflow: hidden;
+}
+
 .minicolors input[type=hidden] + .minicolors-swatch {
     width: 28px;
     position: static;
@@ -183,8 +188,6 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 18px;
-    height: 2px;
     background: white;
     border: solid 1px black;
     margin-top: -2px;
@@ -237,10 +240,10 @@
 
 /* Default theme */
 .minicolors-theme-default .minicolors-swatch {
-    top: 5px;
-    left: 5px;
-    bottom: 5px;
-    width: 18px;
+    top: 8px;
+    left: 8px;
+    bottom: 8px;
+    width: 28px;
 }
 .minicolors-theme-default .minicolors-swatches .minicolors-swatch {
     top: 0;
@@ -257,7 +260,7 @@
 }
 .minicolors-theme-default .minicolors-input {
     height: 20px;
-    padding-left: 26px;
+    padding-left: 42px;
 }
 .minicolors-theme-default.minicolors-position-right .minicolors-input {
     padding-right: 26px;
