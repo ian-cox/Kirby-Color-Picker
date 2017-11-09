@@ -12,7 +12,8 @@ class ColorField extends InputField{
 
   static public $assets = array(
     'js' => array(
-      'jquery.minicolors.min.js'
+      'jquery.minicolors.min.js',
+      'defaults.js'
     ),
     'css' => array(
       'minicolors.css'
@@ -46,6 +47,37 @@ class ColorField extends InputField{
       'data-defaultvalue' => $value,
       'value'    => $value
     ));
+
+    // implement OPACITY option
+    // if opacity is used, we must use RGB format
+    if($this->opacity() !== false):
+      $color->attr(array(
+        'data-format' => 'rgb',
+        'data-opacity' => true
+      ));
+    else:
+      $color->attr(array(
+        'data-format' => 'hex'
+      ));
+    endif;
+
+    // implement CONTROL option
+    if($this->control() == "brightness" || $this->control() == "saturation" || $this->control() == "wheel"):
+      $color->attr(array(
+        'data-control' => $this->control()
+      ));
+    else:
+      $color->attr(array(
+        'data-control' => 'hue'
+      ));
+    endif;
+
+    // implement SWATCHES option
+    if($this->swatches() && $this->swatches() !== ""){
+      $color->attr(array(
+        'data-swatches' => implode('|', $this->swatches())
+      ));
+    }
 
     $color->append($this->option('', '', $this->value() == ''));
 
