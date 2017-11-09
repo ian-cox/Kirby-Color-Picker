@@ -12,8 +12,7 @@ class ColorField extends InputField{
 
   static public $assets = array(
     'js' => array(
-      'jquery.minicolors.min.js',
-      'defaults.js'
+      'color.js'
     ),
     'css' => array(
       'minicolors.css'
@@ -28,12 +27,12 @@ class ColorField extends InputField{
   public function input() {
     $color = new Brick('input');
     $color->addClass('input colorpicker');
-    $color->data('field', 'minicolors');
+    $color->data('field', 'colorfield');
 
     if($this->value() == "" && $this->default() !== ""):
       $value = $this->default();
     elseif($this->value() == "" && $this->default() == ""):
-      $value = "#fff";
+      $value = "";
     else:
       $value = $this->value();
     endif;
@@ -53,7 +52,7 @@ class ColorField extends InputField{
     if($this->opacity() == true):
       $color->attr(array(
         'data-format' => 'rgb',
-        'data-opacity' => true
+        'data-opacity' => '1'
       ));
     else:
       $color->attr(array(
