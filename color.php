@@ -12,7 +12,7 @@ class ColorField extends InputField{
 
   static public $assets = array(
     'js' => array(
-      'minicolors.js'
+      'jquery.minicolors.min.js'
     ),
     'css' => array(
       'minicolors.css'
