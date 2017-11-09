@@ -33,7 +33,7 @@ class ColorField extends InputField{
     if($this->value() == "" && $this->default() !== ""):
       $value = $this->default();
     elseif($this->value() == "" && $this->default() == ""):
-      $value = "";
+      $value = "#fff";
     else:
       $value = $this->value();
     endif;
