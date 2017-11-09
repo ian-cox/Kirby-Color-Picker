@@ -50,7 +50,7 @@ class ColorField extends InputField{
 
     // implement OPACITY option
     // if opacity is used, we must use RGB format
-    if($this->opacity() !== false):
+    if($this->opacity() == true):
       $color->attr(array(
         'data-format' => 'rgb',
         'data-opacity' => true
