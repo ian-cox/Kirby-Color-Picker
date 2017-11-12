@@ -12,7 +12,7 @@ class ColorField extends InputField{
 
   static public $assets = array(
     'js' => array(
-      'minicolors.js'
+      'color.js'
     ),
     'css' => array(
       'minicolors.css'
@@ -27,7 +27,7 @@ class ColorField extends InputField{
   public function input() {
     $color = new Brick('input');
     $color->addClass('input colorpicker');
-    $color->data('field', 'minicolors');
+    $color->data('field', 'colorfield');
 
     if($this->value() == "" && $this->default() !== ""):
       $value = $this->default();
@@ -46,6 +46,37 @@ class ColorField extends InputField{
       'data-defaultvalue' => $value,
       'value'    => $value
     ));
+
+    // implement OPACITY option
+    // if opacity is used, we must use RGB format
+    if($this->opacity() == true):
+      $color->attr(array(
+        'data-format' => 'rgb',
+        'data-opacity' => '1'
+      ));
+    else:
+      $color->attr(array(
+        'data-format' => 'hex'
+      ));
+    endif;
+
+    // implement CONTROL option
+    if($this->control() == "brightness" || $this->control() == "saturation" || $this->control() == "wheel"):
+      $color->attr(array(
+        'data-control' => $this->control()
+      ));
+    else:
+      $color->attr(array(
+        'data-control' => 'hue'
+      ));
+    endif;
+
+    // implement SWATCHES option
+    if($this->swatches() && $this->swatches() !== ""){
+      $color->attr(array(
+        'data-swatches' => implode('|', $this->swatches())
+      ));
+    }
 
     $color->append($this->option('', '', $this->value() == ''));
 
