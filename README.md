@@ -134,9 +134,10 @@ fields:
 
 ---
 #### Credits
-Thanks to [@claviska](https://github.com/claviska) for his great MiniColors plugin.
-[@ptouch718](https://github.com/ptouch718) for his masterful JS debugging.
-@dionysiusmarquis and @bastianallgeier for helping port it to kirby 2.2
+- [@claviska](https://github.com/claviska) for his great MiniColors plugin.
+- [@ptouch718](https://github.com/ptouch718) for his masterful JS debugging.
+- [@dionysiusmarquis](https://github.com/dionysiusmarquis) and [@bastianallgeier](https://github.com/bastianallgeier) for helping port it to kirby 2.2
+- [@luxlogica](https://github.com/luxlogica) for adding support for RGBA and other control options.
 
 ---
 ## License: The MIT License
