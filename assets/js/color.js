@@ -197,6 +197,7 @@
           .prop('size', size)
           .wrap(minicolors)
           .after(
+            '<div class="field-icon"><i class="icon fa fa-paint-brush"></i></div>' +
             '<div class="minicolors-panel minicolors-slider-' + settings.control + '">' +
             '<div class="minicolors-slider minicolors-sprite">' +
             '<div class="minicolors-picker"></div>' +
